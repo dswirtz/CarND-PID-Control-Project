@@ -1,1 +1,3 @@
+This project gave me an issue becuase I had trouble compiling the project with Visual Studio and getting the uWebSockets to work for the simulator. After plenty of troubleshooting, I find out that a lot of people were having trouble with the Windows implementation of the project. After consulting with the forums and my mentor, I tried to give Docker a try. Still no luck. Finally, my mentor suggested I try the Linux subsystem new to one of the most recent updates to Windows 10. That worked like a charm. CMake and uWebSockets were extremely easy to install, and the subsystem allowed for easy compilation of my C++ project. I will definitely be using the Linux subsystem in the future for my C++ projects.
+
 
