@@ -2,4 +2,6 @@ This project gave me an issue becuase I had trouble compiling the project with V
 
 In a PID controller, 'P' is the proportional term where the steering angle is proportional to the CTE multiplied a factor of Tau. A 'P' controller alone is only marginally stable becuase it will consistently overshoot. For this project, I chose a Tau factor of 0.2 for the 'P' term because, though I didn't actually test it, I suspect that a really small Tau for the 'P' term wouldn't take corners very well, especially at higher speeds.
 
+'D' is the differential term that helps with the overshooting or oscillations of the car. 'D' is the difference between the CTE at time 't' and the CTE at time 't-1' multiplied by a factor of Tau. What this does is when the car steers in proportion to the CTE, the 'D' term will counter-steer, allowing for the car to gently steer in the direction of the reference, thus reducing the oscillations. For this, I chose a Tau of 0.0008. The idea behind this small number is to try to minimize the effect (visually) of the counter-steering. In other words, I didn't want the counter-steering to have so much of an effect that it created oscillations as the car was moving toward the reference.
+
 
